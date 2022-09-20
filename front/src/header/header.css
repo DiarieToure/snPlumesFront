@@ -1,0 +1,105 @@
+:root{
+    --swiper-theme-color:#ffad00 !important;
+}
+
+#header{
+    display: block;
+    justify-content: center;
+}
+.headerCaroussel{
+    background-color: rgba(255, 173, 0, 0.15);
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+.swiper-slide{
+    width: 50%;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: black;
+}
+
+.searchBar{
+    margin-top:6%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.sBarinput {
+ 
+    border:none;
+    cursor: pointer;
+    background-color: rgba(255, 174, 0, 0);
+    color: grey;
+    width: 70%;
+    margin: 0%;
+    
+}
+.sBarinput:focus{
+    outline: none !important;
+    border: none;
+  }
+
+.searchBar{
+    border: #FFAD00 solid ;
+    background-color:  rgba(255, 173, 0, 0.15);
+    border-radius: 50px;
+}
+.searchBar button {
+    width: 30px;
+    border-radius: 50px;
+    background-color: #ffae0000;
+    margin-top: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+.card{
+    width: 100%;
+    height:30%;
+    display:flex;
+  
+ }
+div.card-title.h5{
+    width:55%;
+    margin:auto;
+    padding-bottom:2px;
+    padding-top:2px;
+    font-size: 1em;
+
+
+}
+.card-text
+{
+    width:80%;
+    margin:auto;
+    height:150px;
+}
+@media screen and (max-width:769px) {
+
+.card{
+   width: 100%;
+   height:90%;
+   display:flex;
+   
+ 
+}
+
+
+    div.card-title.h5 h2{
+       font-size: 1.1em;
+       margin: 2px;
+       padding-top: 15px;
+
+    }
+
+.card-text
+{
+    font-size: 1em;
+    height: 16em;
+}
+
+
+}

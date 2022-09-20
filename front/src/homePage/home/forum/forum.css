@@ -1,0 +1,13 @@
+.cardForumContainer .datePost{
+    padding-right: 1em;
+    border-right: 0.2em solid black;
+    color: #ffad00;
+}
+.cardForumContainer div a{
+float: right;
+padding-bottom: 1em;
+padding-right: 2em;
+color: #ffad00;
+font-weight: bold;
+text-decoration: none;
+}

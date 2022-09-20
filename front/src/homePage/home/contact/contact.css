@@ -1,0 +1,16 @@
+input{
+    border-radius: 30px;
+    width: 300px;
+    height: 3em;
+    margin-bottom: 25px;
+    border: grey solid 1.5px;
+    font-size: medium;
+}
+textarea{
+    border: grey solid 1.5px;
+    width: 300px;
+    border-radius: 10px;
+    height:200px;
+    font-size: larger;
+
+}
