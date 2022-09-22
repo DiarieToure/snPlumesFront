@@ -9,13 +9,15 @@ background-color: rgba(255, 173, 0, 0.15);
 
 }
 
-colContainer.loginLeftPart{
+ .loginLeftPart{
     width: 100%;
     display: block;
     margin-left: auto;
     justify-content: center;
     padding-top: 2%;
-    border: solid 1em rgba(255, 174, 0, 0);
+   background: rgba(255, 173, 0, 0.15);
+   padding-top: 2em;
+
 
 }
 div.loginLeftPartImg{
@@ -40,7 +42,6 @@ div.loginLeftPartImg{
    }
 div.rowContainer{
     display: flex;
-   background-color: rgba(255, 173, 0, 0.15); 
     margin: 10%;
     
 }
@@ -51,7 +52,7 @@ div.rowContainer{
     justify-content: center;
 
 }
-colContainer.registerRightPart {
+ .registerRightPart {
 
     width: 100%;
     margin: auto;
@@ -105,7 +106,7 @@ width: 90%;
         margin: 10%;
         
     }
-    colContainer.registerRightPart{
+    .registerRightPart{
         width: 90%;
 
     }
@@ -114,7 +115,7 @@ width: 90%;
         margin-left: 5%;
     }
     div.registerForm button{
-    width: 90%;
+    font-size: 1px;
     }
 
 
