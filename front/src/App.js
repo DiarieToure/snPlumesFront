@@ -1,8 +1,9 @@
 // import { Navbar } from "./homePage/topbar/topbar";
 import Home from "./homePage/home/Home";
 import {Routes,Route  } from "react-router-dom";
-import Login from "./Pages/login/login";
-import Register from "./Pages/register/register";
+import Login from "./Pages/Profil/login/login"
+import Register from "./Pages/Profil/register/register"
+
 
 function App() {
 

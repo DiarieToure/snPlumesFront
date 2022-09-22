@@ -49,18 +49,18 @@
 
 
     #navbar{
-        display: flex;
+        display: none;
         flex-direction: column;
-       
         position: absolute;
         top: 60px;
-        right: -500px;
+        right: -300px;
         width: 300px;
         height: 50;
         background: rgb(255, 174, 0);
 
     }
     #navbar.active{
+        display: flex;
         right: 0px;
         height: 80vh;
         opacity: 1;

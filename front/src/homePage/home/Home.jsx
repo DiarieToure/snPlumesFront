@@ -8,7 +8,7 @@ import Contact from './contact/contact'
 import Footer from '../../footer/footer'
 import Forum from './forum/forum'
 import "./home.css"
-import { Navbar } from '../topbar/topbar'
+import { Navbar } from '../../topbar/topbar'
 
 export default function Home() {
   return (
