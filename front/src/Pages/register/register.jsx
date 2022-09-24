@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navbar } from '../../../topbar/topbar'
+import { Navbar } from '../../topbar/topbar'
 import './register.css'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
 import {useState} from 'react';
-import {Redirect} from 'react-router-dom';
+import {Navigate} from 'react-router-dom';
 
 export default function Register() {
 
@@ -16,11 +16,14 @@ const [name,setName]=useState("");
 const [number,setNumber]=useState("");
 const [adresse,setAdresse]=useState("");
 
+const handleSubmit=(e)=>{
+  e.preventDefault();
+  return <Navigate replace to="/redirect/register" />;
+}
+
 async function signUp() {
-  let item={email,name,number,adresse,password,confirm_password}
-  console.warn(item);
 
-
+ let item={email,name,adresse,number,password,confirm_password}
   const response= await fetch(
     'http://localhost:8000/api/auth/register',
     {
@@ -35,7 +38,12 @@ async function signUp() {
   )
   const content= await response.json();
     console.log(content);
-    
+
+
+   
+
+   
+  
 }
 
 
@@ -70,7 +78,7 @@ async function signUp() {
             </div>
 
             <div className="registerForm">
-              <Form encType='form enctype= multipart/form-data' method='Post' action=''>
+              <Form encType='form enctype= multipart/form-data' method='Post' onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               {/* <Form.Label>Email address</Form.Label> */}
               <span><Form.Control type="email" onChange={(e)=>setEmail(e.target.value)} placeholder="Identifiant/email" /></span>
