@@ -3,7 +3,7 @@
     border-right: solid grey 0.01em;
     margin-left: 70px;
     margin-right: 70px;
-    height: 100vh;
+    height: 100%;
     
 }
 .forumContainer {
@@ -32,6 +32,100 @@ height: 50px;
 }
 .forumContainer .nav div a.active{
     color: #FFAD00;
+}
+
+/* postes */
+
+.allPostContainer{
+    display: block;
+}
+.allPostContainer .postContainer{
+    display: block;
+}
+
+.allPostContainer .postContainer .imgAndPost
+{
+    display: flex;
+    margin: 25px;
+    margin-bottom: 0px;
+  
+}
+
+/* .allPostContainer .postContainer .imgAndPost .postInfo
+{
+    width: 80%;
+} */
+.allPostContainer .postContainer .imgAndPost .postInfo .postTime,.commentTime
+{
+    margin-bottom: 15px;
+    color: #FFAD00;
+    font-weight: 800;
+}
+.allPostContainer .postContainer .imgAndPost .postInfo .postDesc h3
+{
+    margin-bottom: 15px;
+}
+.allPostContainer .postContainer .postComment {
+   margin-top: 20px;
+}
+.allPostContainer .postContainer .postComment .commentaire {
+    width: 100%;
+}
+.allPostContainer .postContainer .postComment .commentaire span
+{
+   margin-top: 20px;
+   margin-bottom: 0%;
+   
+   font-weight: 800;
+}
+
+/* comment */
+.commentaire .commentContainer {
+
+    margin: 25px;
+  
+    width: 80%;
+    background: rgba(255, 243, 217, 1);
+    padding: 25px;
+
+
+}
+.commentInput form textarea{
+    width: 95%;
+    height:10%;
+    border: none;
+    border-radius: 0px;
+    padding: 10px;
+
+}
+.commentInput form div button
+
+{
+    width: 25%;
+    height: 40px;
+    margin: auto;
+    border-radius:30px;
+    background-color: #FFAD00;
+    font-size: medium;
+    font-weight: 800;
+    border: none;
+
+}
+.commentInput form div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+#fileImage{
+    width: 30%;
+    height: auto;
+    padding-left: 10px;
+    border-radius: 0px;
+    border: none;
+    margin-top: 30px;
 }
 
 @media screen and (max-width:850px){

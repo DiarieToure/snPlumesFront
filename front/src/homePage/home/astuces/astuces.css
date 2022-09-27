@@ -2,3 +2,24 @@
     color: black;
     --swiper-navigation-size:20px;
 }
+.astucesContainer button{
+
+   margin-Top:5%;
+   cursor:pointer;
+   width:55%;
+   font-Weight:700;
+   border-Radius:25px;
+   border:none;
+   height:35px;
+   background:#ffad00
+}
+@media screen and (max-width:780px) {
+    .astucesContainer button{
+        font-size: 12px;
+        width: 70%;
+    }
+    *{
+        font-size: 12px;
+    }
+    
+}

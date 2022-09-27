@@ -1,0 +1,9 @@
+
+    .cardShopContainer button{
+
+        font-weight:700;
+        border-radius:25px;
+        border:none;
+        height:35px;
+        background-color: #ffad00;
+    }

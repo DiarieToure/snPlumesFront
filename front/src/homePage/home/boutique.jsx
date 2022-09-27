@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-
+import './boutique.css'
 const products=[
     {
     name:"Couveuse",

@@ -1,0 +1,139 @@
+.loginContainer .register{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 8%;
+    border: rgba(255, 173, 0, 0.15) solid 1em;
+    background-color: rgba(255, 173, 0, 0.15);
+    
+    
+    }
+    
+     .registerLeftPart{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        justify-content: center;
+        padding-top: 2%;
+       background: rgba(255, 173, 0, 0.15);
+       padding-top: 2em;
+    
+    
+    }
+    div.registerLeftPartImg{
+        margin: auto;
+        width: 6em;
+        margin-top: 2em;
+    
+    }
+    .registerLeftPart button{
+    
+        height: 35px;
+        border-radius:30px;
+        font-size: small;
+        margin-top: 5%;
+        background-color: #FFAD00;
+        font-weight: 700;
+        border: none;
+        margin: auto;
+    
+        
+    
+       }
+    div.rowContainer{
+        display: flex;
+        margin: 10%;
+        
+    }
+    .loginContainer .register .rightpart{
+        /* width:50%; */
+        height: 100%;
+        background-color: #fff;
+        justify-content: center;
+    
+    }
+     .loginRightPart {
+    
+        width: 100%;
+        margin: auto;
+        padding-top: 2%;
+        background-color: #fff;
+        border: solid 1em rgba(255, 173, 0, 0.15);
+        display: block;
+    
+    
+    }
+    .loginForm{
+        width: 50%;
+        margin: auto;
+    }
+    .loginRightPart form input{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    border-radius: 0%;
+    height:30px;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.25);
+    border: 0em;
+    border-left:solid #FFAD00 0.5em ;
+    font-size: smaller;
+    color: black;
+    font-weight: 700;
+    padding-left: 25px;
+    width: 90%;
+    }
+     .submitBtn{
+    
+        margin-left: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    
+    }
+    p.errors{
+        color: red;
+    }
+    .loginForm button{
+    
+        height: 35px;
+        border-radius:30px;
+        font-size: small;
+        margin-top: 1%;
+        background-color: #FFAD00;
+        font-weight: 700;
+        border: none;
+    }
+    
+    @media screen and (max-width:780px) {
+        div.rowContainer{
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: rgba(255, 173, 0, 0.15); 
+            margin: 10%;
+            
+        }
+        .loginRightPart{
+            width: 90%;
+    
+        }
+        div.loginForm {
+            width: 90%;
+            margin-left: 5%;
+        }
+        div.loginForm button{
+            width: 70%;
+        font-size: 10px;
+        }
+    
+    
+        .loginRightPart form input{
+            font-size: x-small;
+        }
+        .loginRightPart .submitBtn {
+            width: 50%;
+            margin:auto;
+    
+            margin-bottom: 5%;
+        }
+    }
+        
+    

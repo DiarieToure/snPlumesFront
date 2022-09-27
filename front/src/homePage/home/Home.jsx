@@ -19,9 +19,9 @@ export default function Home() {
       <div>
         <h2>A propos de SNPlumes</h2>
 
-        <div className="apropos" style={{display:'flex',width:'85%', margin:'auto',background:'rgba(255, 173, 0, 0.15)',padding:'30px'}}>
+        <div className="apropos" >
             <div className="imgapropos" >
-                <img src="../../images/cotcot-et-les-U.jpg" alt="imgapropos" style={{width:'250px',paddingRight:'30px',height:'10em',float:'left',clear:'both'}} />
+                <img src="../../images/cotcot-et-les-U.jpg" alt="imgapropos"  />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor  Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor</p>
               

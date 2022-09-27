@@ -16,8 +16,12 @@ import { Nav,NavDropdown } from 'react-bootstrap';
       <div id='topbar' className={this.state.clicked ? "#topbar active" : "#topbar "}>
 
         <div className='navigation'>
-          <a href="index.html">
+          <a href="/" style={{textDecoration:'none',display:'flex'}}>
+            <div>
             <img src="../../images/logo.png" alt="logo snlumes" width={70} />
+            <span style={{fontSize:'26px',fontWeight:'bolder',textDecoration:'none',color:'black',marginBottom:'5px'}}>SNPlumes</span>
+            </div>
+      
           </a>
     
           <div className='navLink'>

@@ -6,8 +6,10 @@ import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
 import {useState} from 'react';
 import {Navigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 export default function Register() {
+
 
 const [password,setPassword]=useState("");
 const [confirm_password,setConfirm_password]=useState("");
@@ -15,10 +17,12 @@ const [email,setEmail]=useState("");
 const [name,setName]=useState("");
 const [number,setNumber]=useState("");
 const [adresse,setAdresse]=useState("");
+const [formValidate,setFormValidate]=useState(false)
+const navigate=useNavigate();
 
 const handleSubmit=(e)=>{
   e.preventDefault();
-  return <Navigate replace to="/redirect/register" />;
+;
 }
 
 async function signUp() {
@@ -38,14 +42,23 @@ async function signUp() {
   )
   const content= await response.json();
     console.log(content);
+    console.log(content.message);
 
 
-   
+    if (content.message==='Registration') {
+      return setFormValidate(true)
+    }
+    else{
+      return setFormValidate(false)
+  
+    }
 
-   
+
+}
+if (formValidate) {
+  return <Navigate to='/Login'/>
   
 }
-
 
   return (
     <div className="registerContainer">
@@ -62,7 +75,7 @@ async function signUp() {
             <div className="loginLeftPartImg">
               <img src="../../images/logo.png" alt="connection" style={{marginBottom:'2.10em',width:'100%'}} />
               
-              <Button type="submit">
+              <Button type="submit" onClick={()=>navigate("/Login")  }style={{cursor:'pointer'}} >
                 Se connecter
               </Button>
           

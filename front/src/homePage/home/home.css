@@ -7,21 +7,47 @@
 h2{
     margin: 30px;
 }
-.home button{
-    margin-left:25%;
-    margin-top:5%;
-    width:55%;
+.searchBar button{
+
     font-weight:700;
     border-radius:25px;
     border:none;
     height:35px;
-    background:#ffad00;
 }
 
+/* apropos */
+.apropos{
+    display:flex;
+    width:85%;
+     margin:auto;
+    background:rgba(255, 173, 0, 0.15);
+    padding:30px;
+}
+.imgapropos img{
+    width:250px;
+    padding-right:30px;
+    height:10em;
+    float:left;
+    clear:both;
+  }
 
-@media screen and (max-width:769px) {
-    /* .home{
- 
-    } */
 
+@media screen and (max-width:780px) {
+   *{
+    margin: auto;
+   }
+   .apropos{
+    display:flex;
+    width:50%;
+}
+.imgapropos img{
+  width:50%;
+  padding-right:30px;
+  height:80px;
+  float:left;
+  clear:both;
+}
+h2{
+    font-size: medium;
+}
 }

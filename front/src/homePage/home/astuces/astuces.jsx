@@ -81,7 +81,7 @@ export default function Astuces() {
                   <Card.Body style={{width:'50%',display:'block'}}>
                     <Card.Text style={{width:'90%',margin:'auto', paddingTop:'10%'}}>
                       {astuceSlider.description}
-                      <button style={{marginLeft:'25%',marginTop:'5%',cursor:'pointer',width:'55%',fontWeight:700,borderRadius:'25px',border:'none',height:'35px',background:'#ffad00'}}>En savoir plus</button>
+                      <button >En savoir plus</button>
                     </Card.Text>
                     
                   </Card.Body>

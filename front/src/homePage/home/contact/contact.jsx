@@ -3,11 +3,11 @@ import './contact.css'
  
 export default function Contact() {
   return (
-    <div>
+    <div className='contactPage'>
         <h2>Envoyez-nous un message</h2>
-        <div style={{display:'block',justifyItems:'center',border:'solid rgba(255, 173, 0, 0.15) 1em',width:'87%',margin:'auto',paddingTop:"5em",paddingBottom:'3em'}}>
-        <div className="ContactContainer" style={{display:'flex',flexWrap:'wrap',justifyContent:'space-between',width:'75%',margin:'auto'}}>
-            <div className="personalInfoForm" style={{display:'block'}}>
+        <div style={{display:'block',justifyItems:'center',border:'solid rgba(255, 173, 0, 0.15) 1em',width:'90%',margin:'auto',paddingTop:"5em",paddingBottom:'3em'}}>
+        <div className="ContactContainer" >
+            <div className="personalInfoForm" >
                 <div>
                     <input type="text"  placeholder='Nom'/>
                 </div>
@@ -24,7 +24,7 @@ export default function Contact() {
             
 
         </div>
-        <button type="submit" style={{width:'10em',marginLeft:'40%',marginTop:'15px'}}>Envoyer</button>
+        <button type="submit" >Envoyer</button>
         </div>
     </div>
   )
