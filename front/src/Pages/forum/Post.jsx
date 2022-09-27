@@ -1,31 +1,31 @@
 import React from 'react'
 import './forum.css'
-import { useState } from 'react';
-import List from './List';
+import axios from 'axios'
+import { useState, useEffect } from 'react';
 
-const Post=({list})=> {
+const Post=({post})=> {
 
-   
+    const [commentaires, setCommentaires] = useState(null);
     const [visible,setVisible]=useState(false);
+
+    useEffect(() => {
+      axios.get("http://localhost:8000/api/comments")
+      .then( res => console.log(res.data.comments) )
+    }, [])
  
   return (
     <div className="postContainer" key='key'>
         <div className="imgAndPost">
-
             <div className="postInfo" >
-                <img src="../../images/poule3.jpg" alt="postImage" style={{marginBottom:'1em',width:'25%',float:'left',clear:'both', marginRight:'10%'}} />
+                {post.image && <img src={post.image} alt="postImage" style={{marginBottom:'1em', maxWidth: '600px', width:'25%',float:'left',clear:'both', marginRight:'10%'}} />}
 
                 <div className="postTime">
                     <div><span>05/07/2022   |</span>  <span>Diarie Toure</span> </div>
                 </div>
                 <div className="postDesc">
-                    <h3>test</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun</p>
-                
-                                    
-                    </div>
+                    <h3>{post.title}</h3>
+                    <p>{post.content}</p>        
+                </div>
             </div>
         
         </div>

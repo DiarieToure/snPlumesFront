@@ -6,7 +6,6 @@ import Register from "./Pages/register/Register"
 import Dashboard from "./Pages/Profil/dashboard";
 import {Navigate} from "react-router-dom"
 import Forum from "./Pages/forum/forum";
-import List from "./Pages/forum/List";
 import MyPost from "./Pages/forum/myPost";
 
 
@@ -21,7 +20,6 @@ function App() {
           <Route path="/register" element={<Register/>}/>
           <Route path="/forum" element={<Forum/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
-          <Route path="/list" element={<List/>}/>
           <Route path="/myPost" element={<MyPost/>}/>
 
           <Route path="/redirect/register" element={ <Navigate to="/login" /> } />

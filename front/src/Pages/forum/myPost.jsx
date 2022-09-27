@@ -2,11 +2,12 @@ import React from 'react'
 import { Navbar } from '../../topbar/topbar'
 import { Nav } from 'react-bootstrap'
 import './forum.css'
-import List from './List'
-import Post from './Post'
+import BlogList from './BlogList'
 
 
 export default function MyPost() {
+
+    
   return (
     <>
     <Navbar/>
@@ -29,10 +30,7 @@ export default function MyPost() {
         </div> 
 
         <div className="allPostContainer">
-            <Post/>
-            <Post/>
-            <Post/>
-          <List/>
+        <BlogList/>
         </div>
         
     </div>

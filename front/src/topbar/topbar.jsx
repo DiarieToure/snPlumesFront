@@ -35,12 +35,12 @@ import { Nav,NavDropdown } from 'react-bootstrap';
               <NavDropdown title="Profil"  id="basic-nav-dropdown"  background='grey'>
                 <div style={{display:'block',background:'grey', marginTop:'2em',marginBottom:'10em',height:'15vh',zIndex:'500000'}} data-popper-reference-hidden="true">
                   <div>
-                  <NavDropdown.Item href="/login">Insription</NavDropdown.Item>
+                  <NavDropdown.Item href="/login">Se connecter</NavDropdown.Item>
                   
                   </div>
                   <div>
                     <NavDropdown.Item href="/register">
-                      Se connecter
+                     Inscription
                     </NavDropdown.Item>
                   </div>
 

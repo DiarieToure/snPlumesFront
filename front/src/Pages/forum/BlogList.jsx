@@ -1,17 +1,21 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Post from './Post'
 
-const BlogList=({lists, title})=>{
+const BlogList=()=>{
+  const [posts, setPosts] = useState(null);
+
+  useEffect(() => {
+    axios.get("http://localhost:8000/api/posts")
+    .then( res => setPosts(res.data.post) )
+  }, [])
+
   return (
     <div>
-        <h3>{title}</h3>
-        {lists &&lists.map((list)=>(
-            <div key={list.id}>
-                <h2>{list.title}</h2>
-                <p>a desc</p>
-
-            </div>
-        ))}
-
+    {
+      posts && posts.map( post => <Post post={post}/>)
+    }
     </div>
   )
 }
